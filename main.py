@@ -22,3 +22,9 @@ print(df3.describe())
 #mean_estimate = df3.mean()
 print(df3.select_dtypes(include='number').mean())
 
+Q1_math = df3['Math'].quantile(0.25)
+
+Q3_math = df3['Math'].quantile(0.75)
+
+print(f"Квартиль 0.25 = {Q1_math} квартиль 0.75 = {Q3_math}")
+
